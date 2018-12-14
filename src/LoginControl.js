@@ -53,7 +53,7 @@ class LoginControl extends Component{
 
     return(
       <div>
-      <span>LoginControl : </span>
+      
       <Greeting isLoggedIn={this.state.isLoggedIn}/>
         {button}
       </div>

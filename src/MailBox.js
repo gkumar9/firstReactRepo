@@ -5,7 +5,7 @@ class Mailbox extends Component{
     // const listmail=this.props.unreadMessages.map((number,index)=><li key={index}>{number}</li>)
     return(
         <div>
-        <span>Mailbox : </span>
+        
         <span>Hello!</span>
           {
             this.props.unreadMessages.length>0 &&

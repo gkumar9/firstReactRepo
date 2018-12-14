@@ -16,7 +16,7 @@ class NumberList extends Component{
   )
   return(
       <div>
-      <span>ListItems: </span>
+      
       <ul>{listitems}</ul>
       </div>
     )

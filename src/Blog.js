@@ -22,8 +22,8 @@ class Blog extends Component{
 
     return(
         <div>
-          <span>Blog: </span>
-          <hr />
+          {sidebar}
+          <hr/>
           {content}
         </div>
 
