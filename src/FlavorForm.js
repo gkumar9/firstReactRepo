@@ -20,22 +20,22 @@ class FlavorForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-      <div className="form-group">
-        <label>
-          Flavor:
-          <select className="form-control" value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
-          </select>
-        </label>
-        <label>
-        <input className="form-control" type="submit" value="Submit" />
-        </label>
-        </div>
-      </form>
+        <form onSubmit={this.handleSubmit}>
+            <div className="form-group">
+                <label>
+                  Flavor:
+                  <select className="form-control" value={this.state.value} onChange={this.handleChange}>
+                    <option value="grapefruit">Grapefruit</option>
+                    <option value="lime">Lime</option>
+                    <option value="coconut">Coconut</option>
+                    <option value="mango">Mango</option>
+                  </select>
+                </label>
+                <label>
+                <input className="form-control" type="submit" value="Submit" />
+                </label>
+            </div>
+        </form>
         );
     }
 }

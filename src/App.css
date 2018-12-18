@@ -1,6 +1,30 @@
 .App {
     /*text-align: center;*/
-    padding: 30px
+    /*padding: 30px*/
+
+}
+.FancyBorder {
+  padding: 10px 10px;
+  border: 10px solid;
+}
+
+.FancyBorder-blue {
+  border-color: blue;
+}
+.Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Container1{
+    /*color: #999999;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.Dialog-message {
+  font-size: larger;
 }
 
 .App-logo {
@@ -11,12 +35,14 @@
 .App-header {
     /*background-color: #282c34;*/
     /*min-height: 100vh;*/
+    z-index:100;
     display: flex;
     flex-direction: column;
     align-items: center;
     /*justify-content: center;*/
     font-size: calc(10px + 2vmin);
     /*color: white;*/
+    margin-bottom: 50px;
 }
 
 .App-link {

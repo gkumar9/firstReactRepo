@@ -12,7 +12,19 @@ import EssayForm from './EssayForm.js'
 import FlavorForm from './FlavorForm.js'
 import Reservation from './Reservation.js'
 import Calculator from './Calculator.js'
+import Dialog from './Dialog.js'
+import Example from './Example.js'
+import Background from './Background.js'
+import Todo from './ToDo.js'
 let messages = ["react", "vue", "angular"]
+const PRODUCT=[
+  {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+  {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+  {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+  {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+  {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+  {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+];
 let posts = [
     { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
     { id: 2, title: 'Installation', content: 'You can install React from npm.' }
@@ -78,6 +90,22 @@ class App extends Component {
                    <div className="col">Calculator:</div>
                    <div className="col">
                       <Calculator />
+                   </div>
+                   <div className="w-100"></div>
+                   <div className="col">Composition:</div>
+                   <div className="col">
+                      <Dialog />
+                   </div>
+                   <div className="w-100"></div>
+                   <div className="col">Examples:</div>
+                   <div className="col">
+                      <Example products={PRODUCT}/>
+                   </div>
+                   
+                   <div className="w-100"></div>
+                   <div className="col">TODO App:</div>
+                   <div className="col">
+                      <Todo />
                    </div>
                 </div>
              </header>

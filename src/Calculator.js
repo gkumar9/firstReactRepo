@@ -29,12 +29,13 @@ class TemperatureInput extends Component{
 
 	handleChangeCelsius(event){
 		this.setState({temperatureCelsius:event.target.value,
-			temperatureFahrenheit:(event.target.value * 9 / 5) + 32
+			temperatureFahrenheit:((event.target.value * 9 / 5) + 32)
 		})
+		console.log('state value:',this.state)
 	}
 	handleChangeFahrenheit(event){
 		this.setState({temperatureFahrenheit:event.target.value,
-			temperatureCelsius:(event.target.value - 32) * 5 / 9
+			temperatureCelsius:((event.target.value - 32) * 5 / 9)
 		})
 	}
 
