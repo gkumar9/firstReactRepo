@@ -45,4 +45,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 =======
 # firstReactRepo
 This is modidifed CRA my-app of reactjs
+Deployed Link: https://silly-williams-201133.netlify.com/
 
